@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>Igor Follador - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #161617;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            color: #ffffff;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .technologies {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .technologies img {
+            max-width: 60px;
+            margin: 0 10px;
+        }
+
+        .projects-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .projects-list li {
+            margin-bottom: 10px;
+        }
+
+        .projects-list li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Igor Follador - Desenvolvedor Full Stack</h1>
+
+    <img class="profile-image" src="assets/picture.jpg" alt="Imagem de perfil Igor Follador">
+
+    <h2>Informações de Contato</h2>
+    <div class="contact-info fade-in">
+        <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:follador.igor@gmail.com">follador.igor@gmail.com</a>
+        </p>
+    </div>
+    <div class="contact-info fade-in">
+        <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+5554996711882">(54) 99671-1882</a>
+        </p>
+    </div>
+    <div class="contact-info fade-in">
+        <p>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/igorfollador/" target="_blank">LinkedIn</a>
+        </p>
+    </div>
+
+    <h2>Projetos Principais</h2>
+    <ul class="projects-list">
+        <li><a href="https://github.com/IgorFollador" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="https://bodypath.com.br" target="_blank"><i class="fas fa-external-link-alt"></i> Body Path</a></li>
+        <!-- Adicione os links para os seus principais projetos aqui -->
+    </ul>
+
+    <h2>Tecnologias</h2>
+    <div class="technologies">
+        <a href="#" target="_blank"><img src="assets/logos/php-logo.png" alt="PHP Logo"></a>
+        <a href="#" target="_blank"><img src="assets/logos/laravel-logo.png" alt="Laravel Logo"></a>
+        <a href="#" target="_blank"><img src="assets/logos/javascript-logo.png" alt="JavaScript Logo"></a>
+        <a href="#" target="_blank"><img src="assets/logos/nodejs-logo.png" alt="Node.js Logo"></a>
+        <a href="#" target="_blank"><img src="assets/logos/reactjs-logo.png" alt="React.js Logo"></a>
+        <!-- <a href="#" target="_blank"><img src="assets/logos/react-native-logo.png" alt="React Native Logo"></a> -->
+        <a href="#" target="_blank"><img src="assets/logos/jquery-logo.png" alt="jQuery Logo"></a>
+        <a href="#" target="_blank"><img src="assets/logos/java-logo.png" alt="Java Logo"></a>
+        <a href="#" target="_blank"><img src="assets/logos/spring-boot-logo.png" alt="Spring Boot Logo"></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            var fadeInElements = document.querySelectorAll(".fade-in");
+            fadeInElements.forEach(function (element) {
+                element.style.opacity = 0;
+                setTimeout(function () {
+                    element.style.opacity = 1;
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
