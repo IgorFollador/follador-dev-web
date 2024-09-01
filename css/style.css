@@ -1,0 +1,231 @@
+:root {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0F1724;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header {
+    background-color: #030e1e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    padding: 10px 20px;
+    background-color: #00579f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #003f73;
+}
+
+.hero .profile-pic {
+    position: relative;
+    display: inline-block;
+}
+
+.hero .profile-pic::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #D14124, #3797E7);
+    z-index: -1;
+}
+
+.hero .profile-pic img {
+    border-radius: 50%;
+    max-width: 250px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    padding: 50px 20px;
+    padding: 0 10%;
+}
+
+.projects .project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #0F1724;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    position: relative;
+    transition: transform 0.1s ease;
+}
+
+.project-item::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #D14124, #3797E7);
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-item img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.project-item .btn {
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: #00579f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.project-item .btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.project-item .project-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item .project-content {
+    z-index: 1;
+    background: #0F1724;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-item .btn:hover {
+    background-color: #003f73;
+}
+
+.project-item .btn.github {
+    background-color: #333;
+    border: none;
+}
+
+.project-item .btn.github:hover {
+    background-color: #555;
+}
+
+.technologies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.technologies ul li {
+    background-color: #3a3a3a;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.technologies ul li:hover {
+    background-color: #4a4a4a;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(3, 14, 30, 0.295);
+    color: #ffffff;
+}
